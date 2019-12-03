@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"/>
+    <EditText
+
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textColorHint="#DAD2D2"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textEmailAddress" />
+    <EditText
+
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textColorHint="#DAD2D2"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textColorHint="#DAD2D2"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/registerConfrmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="start"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textColorHint="#DAD2D2"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegisterRegister"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFF"
+        android:background="#1565C0"
+        android:text="Register" />
+
+    <ProgressBar
+        android:id="@+id/progressbarregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+    </ProgressBar>
+</LinearLayout>
